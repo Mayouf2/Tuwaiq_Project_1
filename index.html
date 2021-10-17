@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Games shop</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body class="body">
+    <div class="container">
+      <img style="width: 1020px; height: 180px" src="https://www.nanolumens.com/wp-content/uploads/2018/09/gaming-image-header-2-400x200.jpg" alt="">
+      <div class="top-left"><h1>Games shop</h1></div>
+    </div>
+    <div id="navTh">
+      <ul class="navBar">
+        <li class="navItem"><a class="liA" href="./index.html">Home</a></li>
+        <li class="navItem"><a class="liA" href="./Contact.html">Contact</a></li>
+        <div style="float: right"><input id="mySearch" type="text" placeholder="Search.."> <button onclick="search()" type="submit"><i class="fa fa-search"></i></button></div>
+        <li style="float: right" class="navItem"><a class="liA" href="./About.html">About</a></li>
+      </ul>
+      <div id="commentSection">
+        <p id="comment"> </p>
+        <div class="cEnd">
+          <div id="login">
+            <div class="secondD">
+            <form >
+              <h6>Enter Username</h6>
+              <input id="userName" type="text" placeholder="Enter username"/>
+              <h6>Enter Password</h6>
+              <input id="password" type="password" placeholder="Enter Password" /><br>
+              <button onclick="user()">Login</button><br>
+              <button id="btnRemove">X</button><br>
+              <img  id="remove" src="https://cdn.crello.com/common/f877c086-e7d2-4166-b41e-19edf28cd589_1024.jpg" alt="" style="width:160px;height:300px;">
+              <p id="remove">Welcome to AD!!!.</p>
+          
+            </form>
+            
+          </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="cata">
+      <h3 class="side-title">Categories</h3>
+      <ul class="cataUl">
+        <li class="cataLi"><a class="a" href=""> RPG</li> </a>
+        <li class="cataLi"><a class="a" href=""> Sport</li> </a>
+        <li class="cataLi"><a class="a" href=""> Horror</li> </a>
+        <li class="cataLi"><a class="a" href=""> Adventure</li> </a>
+        <li class="cataLi"><a class="a" href=""> Shooter</li> </a>
+        <li class="cataLi"><a class="a" href=""> Platformer</li> </a>
+      </ul>
+    </div>
+    <div class="cart">
+
+    </div>
+    <div class="row">
+      <ul id="myUl">
+        <div class="column">
+          <li  class="list-group-item">super mario bros 3</li>
+
+          <img
+            class="img1"
+            src="https://cdn.shopify.com/s/files/1/0630/8509/products/pst2045suprmro_large.jpg?v=1502466967"
+            alt=""
+            style="width: 220px; height: 380px"
+          />
+          <br /> <h5 class="price">$60.00</h5>
+          <a href="./buy.html"><button type="button" id="btn">Buy</button></a>
+        </div>
+        <div class="column">
+          <li class="list-group-item">skyrim</li>
+          <img
+            class="img2"
+            src="https://cdn.shopify.com/s/files/1/0630/8509/products/pst0193_Skyrim_Bethesda_Poster_large.jpg?v=1608695353"
+            alt=""
+            style="width: 220px; height: 380px"
+          />
+          <br /> <h5>$60.00</h5>
+          <a href="./buy.html"><button type="button" id="btn">Buy</button></a>
+        </div>
+        <div class="column">
+          <li class="list-group-item">zelda breath of the wild</li>
+          <img
+            class="img3"
+            src="https://cdn.shopify.com/s/files/1/0630/8509/products/pst1131_Zelda_Breath_of_the-_Wild_BOTW_Poster_large.jpg?v=1608456234"
+            alt=""
+            style="width: 220px; height: 380px"
+          />
+          <br /> <h5>$60.00</h5>
+          <a href="./buy.html"><button type="button" id="btn">Buy</button></a>
+        </div>
+        <div class="column">
+          <li class="list-group-item">assassin's creed 3</li>
+          <img
+            class="img4"
+            src="https://cdn.shopify.com/s/files/1/0630/8509/products/pst0708ac_large.jpeg?v=1484165622"
+            alt=""
+            style="width: 220px; height: 380px"
+          />
+          <br /> <h5>$60.00</h5>
+          <a href="./buy.html"><button type="button" id="btn">Buy</button></a>
+        </div>
+        <div class="column">
+          <li class="list-group-item">destiny 2</li>
+          <img
+            class="img5"
+            src="https://static.wikia.nocookie.net/destinypedia/images/8/87/D2_BoxArt.jpg/revision/latest/scale-to-width-down/700?cb=20170531045837"
+            alt=""
+            style="width: 220px; height: 380px"
+          />
+          <br /> <h5>$60.00</h5>
+          <a href="./buy.html"><button type="button" id="btn">Buy</button></a>
+        </div>
+        <div class="column">
+          <li class="list-group-item">the witcher 3 wild hunt</li>
+          <img
+            class="img6"
+            src="https://upload.wikimedia.org/wikipedia/en/0/0c/Witcher_3_cover_art.jpg"
+            alt=""
+            style="width: 220px; height: 380px"
+          />
+          <br /> <h5>$60.00</h5>
+          <a href="./buy.html"><button type="button" id="btn">Buy</button></a>
+        </div>
+        <div class="column">
+          <li class="list-group-item">final fantasy xv</li>
+          <img
+            class="img6"
+            src="https://static.wikia.nocookie.net/yogscast/images/5/5a/FF_XV_cover_art.jpg/revision/latest/scale-to-width-down/610?cb=20161129205912"
+            alt=""
+            style="width: 220px; height: 380px"
+          />
+          <br /> <h5>$60.00</h5>
+          <a href="./buy.html"><button type="button" id="btn">Buy</button></a>
+        </div>
+        <div class="column">
+          <li class="list-group-item">metal gear solid v</li>
+          <img
+            class="img6"
+            src="https://s3.gaming-cdn.com/images/products/1643/271x377/metal-gear-solid-v-the-definitive-experience-definitive-edition-pc-game-steam-cover.jpg"
+            alt=""
+            style="width: 220px; height: 380px"
+          />
+          <br /> <h5>$60.00</h5>
+          <a href="./buy.html"><button type="button" id="btn">Buy</button></a>
+        </div>
+        <div class="column">
+          <li class="list-group-item">FIFA 21</li>
+          <img
+            class="img6"
+            src="https://cdn.arabhardware.net/wp-content/uploads/2020/07/EdifP-IWAAAVYbt.jpg"
+            alt=""
+            style="width: 220px; height: 380px"
+          />
+          <br /> <h5>$60.00</h5>
+          <a href="./buy.html"><button type="button" id="btn">Buy</button></a>
+        </div>
+        <a href="./page2.html"><button id="nextPage">next page</button></a>
+        
+      </ul>
+    </div>
+    
+
+
+
+
+    <div id="addCon">
+      <input type="text" placeholder="Enter Name Here" id="name">
+    <input type="text" placeholder="Enter imgURL Here" id="img1">
+    <input type="text" placeholder="Enter price Here" id="price">
+    <button id="btn" onclick="addGame()">Add</button>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="main.js"></script>
+  </body>
+</html>

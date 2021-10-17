@@ -1,0 +1,32 @@
+.body{
+    background-color: rgb(55, 80, 221);
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+
+}
+.main{
+    text-align: center;
+    background: #eceeee;
+    background: #eceeee;
+    border: 1px solid #42464b;
+    border-radius: 6px;
+    height: 420px;
+    margin: 15px auto 0;
+    margin-top: 6px;
+    width: 288px;
+    padding-top: 0px;
+    padding-bottom: 1px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.btn{
+    
+    padding: 3px 100px;
+    
+    
+}

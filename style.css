@@ -1,0 +1,161 @@
+.body{
+    background-color: rgb(55, 80, 221);
+    margin-top: 0px;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;
+    display: -ms-inline-grid ;
+}
+.column {
+    float: left;
+    width: auto;  
+    margin-left: 10px;
+    margin-bottom: 30px;
+    background-color: white;
+  }
+  
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+    width: auto;  
+    
+    
+  }
+ .row{
+    border-style: solid;
+    border-width: 1px;
+    
+    
+ }
+ .list-group-item{
+    width: auto;
+ }
+ #btn{
+   padding: 3px 100px;
+   cursor: pointer;
+}
+.navBar{
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: #333;
+   
+ }
+ 
+ .navItem{
+   display: inline;
+   color: white;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   border-right: 1px solid #bbb;
+   cursor: pointer;
+
+ }
+ .liA{
+   color: white;
+ }
+ .navBar a:hover{
+   background-color: #111;
+ }
+ .cata{
+  float: left;
+  background-color: white;
+  height: 1600px;
+  padding: 30px 15px;
+  margin-top: 40px;
+  background: #fcfcfc;
+  border: 1px solid #f0f0f0;
+  margin-top: 0px;
+  border-radius: 6px;
+ }
+ .cataUl{
+  margin-bottom: 0; 
+ }
+ .cataLi{
+  color: #666;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #f0f0f0;
+  line-height: 40px;
+  display: block;
+  text-decoration: none;
+ }
+ .a{
+   color: black;
+ }
+ .cataLI a:hover {
+  color: #ff173c; 
+}
+.cataLi li:last-child a {
+  border-bottom: 0; }
+  
+ .cata h3.side-title{
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  font-size: 20px;
+  color: #333;
+  text-transform: uppercase;
+ }
+ .cata h3.side-title:after {
+  content: '';
+  width: 60px;
+  height: 1px;
+  background: #000000;
+  display: block;
+  margin-top: 6px; 
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+  
+}
+
+
+
+.cEnd{
+  float: right;
+  background: #eceeee;
+  border: 1px solid #42464b;
+  border-radius: 6px;
+  height: 1600px;
+  margin: 15px auto 0;
+  margin-top: 6px;
+  width: 288px;
+  padding-top: 30px;
+  padding-bottom: 1px;
+  padding-right: 10px;
+  padding-left: 30px;
+ 
+}
+
+.about{
+  text-align: center;
+  background: #eceeee;
+  background: #eceeee;
+  border: 1px solid #42464b;
+  border-radius: 6px;
+  height: 242px;
+  margin: 15px auto 0;
+  margin-top: 6px;
+  width: 288px;
+  padding-top: 0px;
+  padding-bottom: 1px;
+  padding-right: 10px;
+  padding-left: 30px;
+  
+
+}
+#nextPage{
+  float: right;
+}
+
+ .input{
+   text-align: center;
+ }
+ 
+ 
