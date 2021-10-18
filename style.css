@@ -6,7 +6,7 @@
     margin-left: auto;
     display: -ms-inline-grid ;
 }
-.column {
+#column {
     float: left;
     width: auto;  
     margin-left: 10px;
@@ -156,6 +156,9 @@
 
  .input{
    text-align: center;
+ }
+ #addCon{
+  padding: 0px 450px;
  }
  
  

@@ -23,31 +23,42 @@
       <ul class="navBar">
         <li class="navItem"><a class="liA" href="./index.html">Home</a></li>
         <li class="navItem"><a class="liA" href="./Contact.html">Contact</a></li>
-        <div style="float: right"><input id="mySearch" type="text" placeholder="Search.."> <button onclick="search()" type="submit"><i class="fa fa-search"></i></button></div>
+        <div style="float: right"><input id="mySearch" type="text" placeholder="Search.."> <button  type="submit"><i class="fa fa-search"></i>Search</button></div>
         <li style="float: right" class="navItem"><a class="liA" href="./About.html">About</a></li>
       </ul>
       <div id="commentSection">
         <p id="comment"> </p>
         <div class="cEnd">
+          
           <div id="login">
             <div class="secondD">
-            <form >
+            <form id="loginForm">
               <h6>Enter Username</h6>
               <input id="userName" type="text" placeholder="Enter username"/>
               <h6>Enter Password</h6>
               <input id="password" type="password" placeholder="Enter Password" /><br>
-              <button onclick="user()">Login</button><br>
-              <button id="btnRemove">X</button><br>
-              <img  id="remove" src="https://cdn.crello.com/common/f877c086-e7d2-4166-b41e-19edf28cd589_1024.jpg" alt="" style="width:160px;height:300px;">
-              <p id="remove">Welcome to AD!!!.</p>
+              <button onclick="login()">Login</button><br>
+              
           
             </form>
             
           </div>
-          </div>
+          </div><br><br><br>
+          <button id="btnRemove">X</button><br>
+              <img  id="remove" src="https://cdn.crello.com/common/f877c086-e7d2-4166-b41e-19edf28cd589_1024.jpg" alt="" style="width:160px;height:300px;">
+              <p id="remove">Welcome to AD!!!.</p>
         </div>
 
       </div>
+    </div>
+    <div id="addCon">
+      <!-- <input type="text" placeholder="Enter Name Here" id="name">
+    <input type="text" placeholder="Enter imgURL Here" class="column">
+    <input type="text" placeholder="Enter price Here" id="price">
+    <button id="btn" onclick="addGame()">Add</button> -->
+    <button id="hideBtn" onclick="hideHandler()">Hide</button>
+    <button id="showBtn" onclick="showHandler()">Show</button>
+
     </div>
     <div class="cata">
       <h3 class="side-title">Categories</h3>
@@ -65,11 +76,12 @@
     </div>
     <div class="row">
       <ul id="myUl">
-        <div class="column">
+        <div id="column" class="column1">
+          <button id="removeimg1">X</button><br>
           <li  class="list-group-item">super mario bros 3</li>
-
           <img
             class="img1"
+            id="imgs"
             src="https://cdn.shopify.com/s/files/1/0630/8509/products/pst2045suprmro_large.jpg?v=1502466967"
             alt=""
             style="width: 220px; height: 380px"
@@ -77,10 +89,12 @@
           <br /> <h5 class="price">$60.00</h5>
           <a href="./buy.html"><button type="button" id="btn">Buy</button></a>
         </div>
-        <div class="column">
+        <div id="column"class="column2">
+          <button id="removeimg2">X</button><br>
           <li class="list-group-item">skyrim</li>
           <img
             class="img2"
+            id="imgs"
             src="https://cdn.shopify.com/s/files/1/0630/8509/products/pst0193_Skyrim_Bethesda_Poster_large.jpg?v=1608695353"
             alt=""
             style="width: 220px; height: 380px"
@@ -88,10 +102,12 @@
           <br /> <h5>$60.00</h5>
           <a href="./buy.html"><button type="button" id="btn">Buy</button></a>
         </div>
-        <div class="column">
+        <div id="column"class="column3">
+          <button id="removeimg3">X</button><br>
           <li class="list-group-item">zelda breath of the wild</li>
           <img
             class="img3"
+            id="imgs"
             src="https://cdn.shopify.com/s/files/1/0630/8509/products/pst1131_Zelda_Breath_of_the-_Wild_BOTW_Poster_large.jpg?v=1608456234"
             alt=""
             style="width: 220px; height: 380px"
@@ -99,10 +115,12 @@
           <br /> <h5>$60.00</h5>
           <a href="./buy.html"><button type="button" id="btn">Buy</button></a>
         </div>
-        <div class="column">
+        <div id="column"class="column4">
+          <button id="removeimg4">X</button><br>
           <li class="list-group-item">assassin's creed 3</li>
           <img
             class="img4"
+            id="imgs"
             src="https://cdn.shopify.com/s/files/1/0630/8509/products/pst0708ac_large.jpeg?v=1484165622"
             alt=""
             style="width: 220px; height: 380px"
@@ -110,10 +128,12 @@
           <br /> <h5>$60.00</h5>
           <a href="./buy.html"><button type="button" id="btn">Buy</button></a>
         </div>
-        <div class="column">
+        <div id="column"class="column5">
+          <button id="removeimg5">X</button><br>
           <li class="list-group-item">destiny 2</li>
           <img
             class="img5"
+            id="imgs"
             src="https://static.wikia.nocookie.net/destinypedia/images/8/87/D2_BoxArt.jpg/revision/latest/scale-to-width-down/700?cb=20170531045837"
             alt=""
             style="width: 220px; height: 380px"
@@ -121,10 +141,12 @@
           <br /> <h5>$60.00</h5>
           <a href="./buy.html"><button type="button" id="btn">Buy</button></a>
         </div>
-        <div class="column">
+        <div id="column"class="column6">
+          <button id="removeimg6">X</button><br>
           <li class="list-group-item">the witcher 3 wild hunt</li>
           <img
             class="img6"
+            id="imgs"
             src="https://upload.wikimedia.org/wikipedia/en/0/0c/Witcher_3_cover_art.jpg"
             alt=""
             style="width: 220px; height: 380px"
@@ -132,10 +154,12 @@
           <br /> <h5>$60.00</h5>
           <a href="./buy.html"><button type="button" id="btn">Buy</button></a>
         </div>
-        <div class="column">
+        <div id="column" class="column7">
+          <button id="removeimg7">X</button><br>
           <li class="list-group-item">final fantasy xv</li>
           <img
-            class="img6"
+            class="img7"
+            id="imgs"
             src="https://static.wikia.nocookie.net/yogscast/images/5/5a/FF_XV_cover_art.jpg/revision/latest/scale-to-width-down/610?cb=20161129205912"
             alt=""
             style="width: 220px; height: 380px"
@@ -143,10 +167,12 @@
           <br /> <h5>$60.00</h5>
           <a href="./buy.html"><button type="button" id="btn">Buy</button></a>
         </div>
-        <div class="column">
+        <div id="column"class="column8">
+          <button id="removeimg8">X</button><br>
           <li class="list-group-item">metal gear solid v</li>
           <img
-            class="img6"
+            class="img8"
+            id="imgs"
             src="https://s3.gaming-cdn.com/images/products/1643/271x377/metal-gear-solid-v-the-definitive-experience-definitive-edition-pc-game-steam-cover.jpg"
             alt=""
             style="width: 220px; height: 380px"
@@ -154,10 +180,12 @@
           <br /> <h5>$60.00</h5>
           <a href="./buy.html"><button type="button" id="btn">Buy</button></a>
         </div>
-        <div class="column">
+        <div id="column" class="column9">
+          <button id="removeimg9">X</button><br>
           <li class="list-group-item">FIFA 21</li>
           <img
-            class="img6"
+            class="img9"
+            id="imgs"
             src="https://cdn.arabhardware.net/wp-content/uploads/2020/07/EdifP-IWAAAVYbt.jpg"
             alt=""
             style="width: 220px; height: 380px"
@@ -165,30 +193,54 @@
           <br /> <h5>$60.00</h5>
           <a href="./buy.html"><button type="button" id="btn">Buy</button></a>
         </div>
-        <a href="./page2.html"><button id="nextPage">next page</button></a>
         
+      
       </ul>
-    </div>
+      <a href="./page2.html"><button id="nextPage">next page</button></a>
+    </div><br>
     
 
 
 
 
-    <div id="addCon">
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+    
+    
+    
+    
+    <div id="myUl">
       <input type="text" placeholder="Enter Name Here" id="name">
-    <input type="text" placeholder="Enter imgURL Here" id="img1">
-    <input type="text" placeholder="Enter price Here" id="price">
-    <button id="btn" onclick="addGame()">Add</button>
-    </div>
-    
-    
-    
-    
-    
-    
-    
-    
-    
+  <!-- <input type="text" placeholder="Enter img" id="gameImg" > -->
+  <input type="text" placeholder="Enter price" id="price">
+  <input type="text" id="gameImg" placeholder="enter your img here">
+  <button  onclick="addGame()">Add</button>
+</div>
     
     
     
