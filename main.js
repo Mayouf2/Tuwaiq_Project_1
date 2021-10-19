@@ -165,12 +165,13 @@ const gameArr = [
 
 ];
 
+
 function gamesA(array) {
   for (let i = 0; i < array.length; i++) {
     const div = $(`
     
     <div id="column">
-    <button id="removeimg1">X</button><br>
+    <button id="removeimg1"  onclick="remove(${i})">X</button><br>
         <li class="list-group-item">${array[i].name}</li>
         <img id="gameImg" style="width: 220px; height: 380px" src=${array[i].imgURL} >
         <h5>${array[i].price}</h5>
@@ -178,10 +179,15 @@ function gamesA(array) {
         </div>
 
         `);
+
+ 
+        localStorage.setItem("myGames", JSON.stringify(gameArr)); 
+        let storedGames = JSON.parse(localStorage.getItem("myGames"));
+
         
 
     main.append(div);
-
+   
   }
   
 }
@@ -196,8 +202,24 @@ function addGame(){
   console.log( gameImgURL.val() )
   gameArr.push(newGame);
   gamesA([newGame]);
+  
 
 }
+function remove (i){
+  gameArr.splice(i, 1);
+  main.html("");
+  gamesA(gameArr);
+
+}
+
+
+
+
+
+
+
+
+
 function hideHandler() {
   main.hide();
 }
