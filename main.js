@@ -219,6 +219,13 @@ function remove (i){
 
 
 
+function alertFun() {
+  alert("your purchase is confirmed ");
+}
+
+
+
+
 
 
 
