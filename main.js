@@ -151,7 +151,7 @@ const gameImgURL = $("#gameImg")
 const gamePrice = $("#price")
 
 
-const gameArr = [
+const gameArr = JSON.parse(localStorage.getItem("myGames")) || [
   
   {name:"super mario bros 3",imgURL:"https://cdn.shopify.com/s/files/1/0630/8509/products/pst2045suprmro_large.jpg?v=1502466967",price:"$60.00"},
   {name:"skyrim",imgURL:"https://cdn.shopify.com/s/files/1/0630/8509/products/pst0193_Skyrim_Bethesda_Poster_large.jpg?v=1608695353",price:"$60.00"},
@@ -182,7 +182,7 @@ function gamesA(array) {
 
  
         localStorage.setItem("myGames", JSON.stringify(gameArr)); 
-        let storedGames = JSON.parse(localStorage.getItem("myGames"));
+        
 
         
 
@@ -199,12 +199,16 @@ function addGame(){
     name: gameName.val(),
     price: gamePrice.val(),
   };
-  console.log( gameImgURL.val() )
+  
   gameArr.push(newGame);
   gamesA([newGame]);
   
 
 }
+
+
+
+
 function remove (i){
   gameArr.splice(i, 1);
   main.html("");
@@ -220,10 +224,10 @@ function remove (i){
 
 
 
-function hideHandler() {
-  main.hide();
-}
+// function hideHandler() {
+//   main.hide();
+// }
 
-function showHandler() {
-  main.show();
-}
+// function showHandler() {
+//   main.show();
+// }
